@@ -9,6 +9,6 @@ run_threshold() {
 
 export -f run_threshold
 
-parallel run_threshold ::: $(seq 0.11 0.01 0.99)
+parallel run_threshold ::: $(seq 0.11 0.01 0.9)
 
 awk '/Threshold:/{t=$2} /uncertainty_threshold: UAR:/{if($5>max){max=$5; max_acc=$7; thresh=t}} END{print "Maximum UAR:", max, "Max ACC:", max_acc, "at threshold", thresh}' results_turev.txt
