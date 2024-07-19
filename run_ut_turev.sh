@@ -4,7 +4,7 @@ exec > >(tee results_turev.txt) 2>&1
 run_threshold() {
     threshold=$1
     echo "Threshold: $threshold"
-    python3 -m nkululeko.ensemble cocosda_2024/exp_turev_hubert.ini cocosda_2024/exp_turev_audmodel.ini --method uncertainty_threshold --threshold $threshold | grep "UAR" | awk '{print $NF}'
+    python3 -m nkululeko.ensemble exp_ococosda_2024/exp_turev_hubert.ini exp_ococosda_2024/exp_turev_audmodel.ini exp_ococosda_2024/exp_turev_wavlm.ini --method uncertainty_threshold --threshold $threshold | grep "UAR" | awk '{print $NF}'
 }
 
 export -f run_threshold
