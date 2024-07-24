@@ -1,6 +1,8 @@
+# Uncertainty-based ensemble learning for speech classification
 
+Nkululeko toolkit: [github.com/felixbur/nkululeko](https://github.com/felixbur/nkululeko)
 
-# SR ensemble  
+## Example for SR (speaker recognition using RAVDESS dataset) ensemble  
 
 ```bash
 # mean
