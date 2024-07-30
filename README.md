@@ -10,8 +10,8 @@ python3 -m nkululeko.ensemble exp_ococosda_2024/exp_speaker_os.ini exp_ococosda_
 # max
 python3 -m nkululeko.ensemble exp_ococosda_2024/exp_speaker_os.ini exp_ococosda_2024/exp_speaker_praat.ini --method max
 # uncertainty_lowest
-python3 -m nkululeko.ensemble exp_ococosda_2024/exp_speaker_os.ini exp_ococosda_2024/exp_speaker_praat.ini --method uncertainty_threshold
-# unertaitnty_threshold
+python3 -m nkululeko.ensemble exp_ococosda_2024/exp_speaker_os.ini exp_ococosda_2024/exp_speaker_praat.ini --method uncertainty
+# unertaitnty_threshold (change uncertainty threshold to uncertainty)
 ./rut_ut_speaker.sh
 # uncertainty_weighted
 python3 -m nkululeko.ensemble exp_ococosda_2024/exp_speaker_os.ini exp_ococosda_2024/exp_speaker_praat.ini --method uncertainty_weighted
